@@ -1,0 +1,12 @@
+Enabled = N
+ApplyTo = 2
+SetName = Basic commercial/sex content check
+Blacklist = black.lis
+Whitelist = white.lis
+TriggerWeight = 50
+Action = 1
+Parameter = 
+RuleFile = spambust.dat
+LBL_Size = 0
+End
+

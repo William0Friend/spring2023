@@ -1,0 +1,26 @@
+#! /bin/sh
+
+prefix="/home/ek/projects/root/pear"
+version="4.2.1RC"
+includedir="${prefix}/include/php"
+includes="-I$includedir -I$includedir/main -I$includedir/Zend"
+if test '@TSRM_DIR@' != ''; then
+    includes="$includes -I$includedir/TSRM"
+fi
+extension_dir='/home/ek/projects/root/pear/lib/php/extensions/no-debug-non-zts-20020429'
+
+case "$1" in
+--prefix)
+	echo $prefix;;
+--includes)
+	echo $includes;;
+--extension-dir)
+	echo $extension_dir;;
+--version)
+	echo $version;;
+*)
+	echo "Usage: $0 [--prefix|--includes|--extension-dir|--version]"
+	exit 1;;
+esac
+
+exit 0

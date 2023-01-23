@@ -1,0 +1,15 @@
+--- CGI.pm~	Sun Apr 27 19:39:10 2003
++++ CGI.pm	Mon Apr 28 01:02:30 2003
+@@ -329,9 +329,9 @@
+ 
+ sub r {
+   my $self = shift;
+-  my $r = $self->{'.r'};
+-  $self->{'.r'} = shift if @ARGV;
+-  $r;
++  $self->{'.r'} = shift if @_;
++  $self->{'.r'} ||= Apache->request;
++  $self->{'.r'};
+ }
+ 
+ #### Method: param

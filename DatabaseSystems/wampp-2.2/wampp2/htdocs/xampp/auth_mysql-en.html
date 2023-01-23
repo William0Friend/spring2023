@@ -1,0 +1,31 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!doctype html public "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; Charset=iso-8859-1">
+<title></title>
+<meta name="author" content="Kay Vogelgesang">
+<link href="xampp.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<table width=600 cellpadding=0 cellspacing=0 border=0>
+<tr>
+  <td>
+<h1>MOD_AUTH_MYSQL<br>HTTP-Authentification via MySQL</h1>
+This "third-party module" allows you to create a HTTP User Authentification with MySQL. The installation into wampp2 is still experimental, <B>this means you need to open "httpd.conf" (\wampp2\apache\conf\httpd.conf) in a text editor of your choice to edit the module "mysql_auth_module" in Line 173. Remove the # at the beginning of the line.</B> Afterwards restart Apache !<br><br>
+You will also need to restart the MySQL server of this wampp package (!!). The necessary <B>database "webauth"</B> including the <B>table "user_pwd"</B> runs on this server. To connect to this database, I constructed the mysql admin user "testuser" with the password "authmysql" only for localhost. The new Mysql AdminUser is important for the the "httpd.conf" or "htaccess".       
+<br><br>
+Test example:  The folder \wampp2\htdocs\restricted\ ("http://localhost/restricted/") is now protected
+via mod_auth_mysql for this special test.<bR><br> 
+
+<B>User: xampp</B><BR>
+<B>Password: wampp</B><BR>
+
+<B>Location: <A HREF="http://localhost/restricted/" target="_new">http://localhost/restricted/</A></B>
+<br><br>
+I also tested this functionality on Windows XP Professional. Good luck. [kvo]
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+a:13:{s:8:"filelist";a:1:{s:8:"SMTP.php";a:4:{s:4:"role";s:3:"php";s:14:"baseinstalldir";s:3:"Net";s:6:"md5sum";s:32:"3c681cf81842a7246498ba73fe37d0aa";s:12:"installed_as";s:24:"c:\php\pear\Net\SMTP.php";}}s:7:"package";s:8:"Net_SMTP";s:7:"summary";s:47:"Provides an implementation of the SMTP protocol";s:11:"description";s:78:"Provides an implementation of the SMTP protocol using PEAR's Net_Socket class.";s:11:"maintainers";a:2:{i:0;a:4:{s:6:"handle";s:8:"chagenbu";s:4:"name";s:15:"Chuck Hagenbuch";s:5:"email";s:15:"chuck@horde.org";s:4:"role";s:4:"lead";}i:1;a:4:{s:6:"handle";s:3:"jon";s:4:"name";s:10:"Jon Parise";s:5:"email";s:11:"jon@php.net";s:4:"role";s:4:"lead";}}s:7:"version";s:5:"1.1.2";s:12:"release_date";s:10:"2003-02-17";s:15:"release_license";s:11:"PHP License";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:109:"- Correctly handle the case where the server's ESMTP response includes a SIZE keyword with no specific value.";s:12:"release_deps";a:2:{i:1;a:3:{s:4:"type";s:3:"pkg";s:3:"rel";s:3:"has";s:4:"name";s:10:"Net_Socket";}i:2;a:3:{s:4:"type";s:3:"pkg";s:3:"rel";s:3:"has";s:4:"name";s:9:"Auth_SASL";}}s:9:"changelog";a:4:{i:0;a:4:{s:7:"version";s:5:"1.1.1";s:12:"release_date";s:10:"2003-01-30";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:78:"- Don't enforce a maximum message size if the SIZE parameter is zero.
+      
+
+";}i:1;a:4:{s:7:"version";s:5:"1.1.0";s:12:"release_date";s:10:"2003-01-18";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:316:"- The SMTP server's SIZE capability is now honored.
+- Improved support for SMTP authentication (LOGIN, PLAIN, CRAM-MD5, DIGEST-MD5).
+- Overhauled the server response parsing system.
+- Added optional debugging output (enabled via setDebug()).
+- A timeout value can now be specified for the socket connection.
+      
+
+";}i:2;a:4:{s:7:"version";s:5:"1.0.1";s:12:"release_date";s:10:"2003-01-02";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:83:"Corrected an off-by-one bug that corrupted the list of ESMTP capabilities.
+      
+
+";}i:3;a:4:{s:7:"version";s:3:"1.0";s:12:"release_date";s:10:"2002-06-11";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:33:"Initial release as PEAR package
+
+";}}s:13:"_lastmodified";i:1048121474;}

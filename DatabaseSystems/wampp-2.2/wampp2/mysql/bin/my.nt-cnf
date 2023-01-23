@@ -1,0 +1,12 @@
+[mysqld]
+basedir=/wampp2/mysql
+#bind-address=192.168.1.1
+datadir=/wampp2/mysql/data
+innodb_data_file_path=ibdata1:30M
+#language=/wampp2/mysql/share/your language directory
+#slow query log#=
+#tmpdir#=
+#port=3306
+#set-variable=key_buffer=16M
+[WinMySQLadmin]
+Server=/wampp2/mysql/bin/mysqld-nt.exe    

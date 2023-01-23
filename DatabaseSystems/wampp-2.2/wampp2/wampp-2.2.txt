@@ -1,0 +1,212 @@
+  WAMPP 2.2 (Server API Version) 
+
+* WindowsApache + MySQL +PHP + Perl
+
+  + Apache 2.0.46
+  + MySQL 4.0.13
+  + PHP 4.3.2 + PEAR
+  + Perl 5.8.0 
+  + mod_php 4.3.2 
+  + mod_perl 1.99_10 dev
+  + mod_ssl 2.0.46 
+  + mod_auth_mysql (only experimental)
+  + openssl 0.9.7b
+
+
+* Features
+
+  + PHPMyAdmin 2.5.1
+  + Webalizer 2.01-10
+  + Mercury Mail Transport System for Win32 and NetWare Systems v3.32
+  + JpGraph 1.12.1 (only for non-commercial, open-source and educational use)
+  + Fastsream NetFile Server 5.6.0.511 Beta 32 (=> for FTP) 
+
+* System Requirements:
+  
+  + 64 MB RAM (recommended)
+  + 160 MB free Fixed Disk 
+  + Windows 98, ME, XP Home
+  + Windows NT, 2000, XP Professional (Empfohlen | Recommended)
+
+
+Achtung: Wer den Fastsream NetFile Server unter \wampp2\FastreamFTP nutzen möchte, bitte
+in den Konfigurationsdateien "NetFileServer.ini", "usersgroups.ini", "user - Anonymous.fcf",
+ "user - xampp.fcf" den Laufwerkbuchstaben G: mit dem Buchstaben der aktuellen Partition 
+(z.B. C:) ersetzen!
+
+Attention: Before the "Fastsream NetFile Server" => [partition]:\wampp2\FastreamFTP
+is started, please  modify the following config files: "NetFileServer.ini",
+"usersgroups.ini","user - Anonymous.fcf", "user - xampp.fcf". Here replace the 
+partition letter G: with the current letter of your partition (par example C:).    
+
+
+(1) Hinweis: Erster Zugriff mit http://localhost (Erstinitialisierung)
+dauert eine Minute ... danach geht es aber wieder flott! 
+
+(1) Note: First access via http://localhost (first-time initialization) 
+takes about one minute... After that it is a lot faster!
+
+(2) Hinweis: Die Warnung "[warn] Loaded DSO /wampp2/apache/php4apache.dll uses 
+plain Apache 1.3 API, this module might crash under EAPI! .." ist nicht
+relevant. MOD_PHP funktioniert sehr gut!
+
+(2) Note: The warning "[warn] Loaded DSO /wampp2/apache/php4apache.dll uses 
+plain Apache 1.3 API, this module might crash under EAPI! .." does not mean 
+anything. MOD_PHP functions nevertheless!
+
+(3) Hinweis: Das Laufwerk muss (normalerweise) in der "php.ini" nicht mehr für 
+MOD_PHP angepaßt werden. Also einfach "wampp-2.2.zip" direkt auf eine 
+Partition entpacken  (z.B. E:\wampp2) und mit der \wampp2\apache_start.bat 
+
+(3) Note: (Generally) You don't need to change the "php.ini" for 
+MOD_php to recognize the drive location . Simply unpack "wampp-2.2.zip" 
+directly on a partition of your choice (f.e. E:\wampp2). Then start wampp2 
+via \wampp2\apache_start.bat.   
+
+(4) Hinweis: Für Mod_Dav experimentell. Zum laden von Web_DAV nur die Module 
+mod_dav.so + mod_dav_fs.so in der httpd.conf entkommentieren (# entfernen). 
+Dann für http://127.0.0.1:81 einrichten und testen!
+(nicht für MS Frontpage, einzig für Adobe Dreamweaver)
+
+(4) Note: To use the experimental version of Mod_Dav load the Modules 
+mod_dav.so + mod_dav_fs.so in the httpd.conf by removing the # on the beginning 
+of their lines. Then try http://127.0.0.1:81 (not for Frontpage, but for Dreamweaver)
+
+(5) Hinweis: Für mod_auth_mysql experimentell. Das Modul ebenfalls einfach
+in der "httpd.conf" entkomentieren. Weitere Hinweise zu diesem Modul findet 
+Ihr auf der Hauptseite dieses wampp-Pakets.   
+
+(5) Note: To use the experimental version of mod_auth_mysql remove the # in the httpd.conf. 
+Detailed information about this topic can be found on the left menu of wampp, once you 
+started it.
+
+
+
+* INSTALLATION 
+
+ +  Unpack wampp-2.2.zip to a local partition of your choice.
+    C:\ will do just fine. The zip file will automatically create a new
+    folder named \wampp2. This new folder must NOT
+    be renamed.
+
+  + Enpackt wampp-2.2.zip auf eine Partition eurer Wahl wie 
+    C:\ oder F:\ oder H:\ oder so. Das ZIP erstellt automatisch
+    ein neues Verzeichnis namens \wampp2, also C:\wampp2 oder 
+    H:\wampp2. (bitte nicht c:\programme\wampp2 oder so !!)
+
+  
++   The MySQL server can be started by double-clicking (executing)
+    mysql_start.bat. This file can be found in the same folder you installed
+    wampp-2.2. in, most likely this will be C:\wampp2\.
+    The exact path to this file is X:\wampp2\mysql_start.bat, where
+    "X" indicates the letter of the drive you unpacked wampp into.
+    This batch file starts the MySQL server in console mode. The first 
+    intialization might take a few minutes.
+    
+    Do not close the DOS window or you'll crash the server!
+    To stop the server, please use mysql_shutdown.bat, which is located in the same
+    directory.
+
+    To use the MySQL Daemon with "innodb" for better performance, 
+    please edit the "my" (or "my.cnf") file in the /wampp2/mysql/bin 
+    directory or for services the c:\my.cnf for windows NT/2000. 
+    In there, activate the "innodb_data_file_path=ibdata1:30M"
+    statement. Attention, "innodb" is not recommended for 95/98/ME/XP Home.
+    
+    To use MySQL as Service for NT/2000/XP Professional, simply copy the "my" 
+    / "my.cnf" file to C:\my, or C:\my.cnf. Please note that this 
+    file has to be placed in C:\ (root), other locations are not permitted. Then
+    execute the "mysql_installservice.bat" in the mysql folder. 	
+    
+
+  + Um den mysqld zu starten bitte Doppelklick auf \wampp2\mysql_start.bat. 
+    Der MySQL Server startet dann im Konsolen-Modus. Das dazu gehörige 
+    Konsolenfenster muss offen bleiben (!!) Zum Stop bitte die mysql_shutdown.bat 
+    benutzen!
+
+    Um den MySQL Daemon von diesem Paket mit "innodb" für bessere Performance zu
+    nutzen, editiert bitte die "my" bzw."my.cnf" im /wampp2/mysql/bin Verzeichnis
+    bzw. als Dienst die C:\my.cnf unter NT/2000. Dort akiviert ihr dann die Zeile
+    "innodb_data_file_path=ibdata1:30M". Achtung, "innodb" kann ich derzeit nicht
+    für 95/98/ME/XP Home empfehlen, da es hier immmer wieder zu blockierenden 
+    Systemen kam. Also nur NT/2000/XP Professional !  
+
+    Wer MySQL als Dienst unter NT/2000/XP Professional benutzen möchte, muss 
+    unebdingt (!) vorher die "my" bzw."my.cnf unter c:\ (also c:\my.cnf) 
+    implementieren. Danach die "mysql_installservice.bat" im mysql-Ordner 
+    aktivieren.  		 	
+
+  + To start the Apache 2.0.4x webserver, you can either use
+    \wampp2\apache\bin\apache.exe or
+    \wampp2\apache_start.bat. Again, don't close the DOS
+    window Apache opens when started, unless you want to shutdown the server.
+    Apache can also be shut down using \wampp2\apache_shutdown.bat.
+    
+    To install Apache 2.0.4x as a service, please use
+    \wampp2\apache_installservice.bat
+    Installation as a service is only available for Windows NT, 2000 or XP
+    professional. Start your browser and type "http://127.0.0.1" or 
+    "http://localhost" in the location bar. You should see our pre-made start page
+    with certain examples and test screens.
+    
+    PHP (with mod_php, as *.php, *.php4, *.php3, *.phtml), Perl (with mod_perl,
+    as *.pl) and Perl:ASP (as *.asp) are all located in
+    \wampp2\htdocs\. Perl can be used as CGI as well (*.cgi). 
+    All logfiles can be found in \wampp2\logs, the cgi-bin
+    is located in \wampp2\cgi-bin.
+  
+  + Um den Apache 2.0.4x zu starten könnt ihr die 
+    \wampp2\apache\bin\apache.exe
+    oder die \wampp2\apache_start.bat benutzen. Bitte nicht das dazu
+    gehörige Konsolen-Window während der Fahrt des Apache schliessen. Erst beim 
+    Stop des Apache dieses Fenster schliessen. Für die Installation als Dienst
+    (Service) könnt ihr apache_installservice.bat aktivieren. Mit http://localhost
+    oder http://127.0.0.1 über eurem Browser seht ihr dann hoffentlich unsere
+    Startseite mit den Beispielen. PHP (als *.php, *.php4, *.php3,
+    *.phml) und Perl (als *.cgi) läuft hier im CGI-Modus überall unter 
+    \wampp2\htdocs\. Die LOG-Dateien findet ihr unter \wampp2\logs\, 
+    das CGI-BIN unter \wampp2\cgi-bin\.  
+
+ +  MySQL starts with standard values for the user id and the password. The preset
+    user id is "root", the password is "" (= no password). To access MySQL via PHP
+    with the preset values, you'll have to use the following syntax:
+    mysql_connect("localhost","root","");
+    If you want to set a password for MySQL access, please use of mysqladmin.
+    To set the passwort "secret" for the user "root", type the following:
+    C:\wampp2\mysql\bin\mysqladmin - u root password secret
+    
+    After changing the password you'll have to reconfigure PHPMyAdmin to use the
+    new password, otherwise it won't be able to access the databases. To do that,
+    open the file config.inc.php in \wampp2\phpmyadmin\ and edit the
+    following lines:    
+    
+    $cfgServers[1]['user']          = 'root';      // MySQL user
+    $cfgServers[1]['password']      = 'geheim';    // MySQL password   
+
+
+  + Der MySQL-Server startet ohne Passwort für MySQl-Administrator "root". 
+    Für eine Zugriff in PHP sähe das also aus:  
+    mysql_connect("localhost","root","");
+    Ein Passwort für "root" könnt ihr über den mysqladmin in der Eingabforderung
+    setzen. Z.B: 
+    \wampp2\mysql\bin\mysqladmin - u root password geheim
+    Wichtig: Nach dem einsetzen eines neuen Passwortes für root muss auch 
+    PHPMyAdmin informiert werden! Das geschieht über die Datei "config.inc.php"
+    zu finden als \wamppxxxx\phpmyadmin\config.inc.php. Dort also folgenden 
+    Zeilen editieren:  
+   
+    $cfgServers[1]['user']          = 'root';      // MySQL user
+    $cfgServers[1]['password']      = 'geheim';    // MySQL password 
+
+    
+
+   Have a lot of fun! Viel Spaß! Bonne Chance!
+  
+   (Last revised version) 06.06.2003 Kay Vogelgesang
+    
+ 
+
+     
+
+	 
+ 

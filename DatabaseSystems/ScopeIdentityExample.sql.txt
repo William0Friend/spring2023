@@ -1,0 +1,13 @@
+// thank you taylore thornton
+create table sports (sportID int identity(1, 1) primary key, sportName varchar(20));
+insert into sports (sportName) values ('Baseball');
+insert into sports (sportName) values ('Basketball');
+create table sport_players (sport_player_ID int identity(1, 1) primary key, playerLN varchar(20),sportID int not null, constraint fk_sport_id foreign key (sportID) references sports (sportID));
+insert into sport_players (playerLN, sportID) values ('Smith', 1);
+insert into sport_players (playerLN, sportID) values ('Jones', 2);
+insert into sport_players (playerLN, sportID) values ('Anderson', 1);
+insert into sports (sportName) values ('Swimming');
+declare  @id smallint;
+set @id = SCOPE_IDENTITY();
+print @id;
+insert into sport_players (playerLN, sportID) values ('Johnson', @id);

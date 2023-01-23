@@ -1,0 +1,93 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!doctype html public "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; Charset=iso-8859-1">
+<title></title>
+<meta name="author" content="Kay Vogelgesang">
+<link href="xampp.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<table width=600 cellpadding=0 cellspacing=0 border=0>
+<tr>
+  <td>
+<h1>Mercury - Ein E-Mailserver für win32</h1><p>
+ <h2>Nach vielen nützlichen Hinweisen von Euch ... <h2><p>
+  Mercury ist in dieser Version Freeware und unterst&uuml;tzt die PHP mail() Funktion.<p>
+  Weitere Informationen findet ihr auf der <a href=http://www.pmail.com/overviews/ovw_mercury.htm target="_top">Mercury Homepage</a>.<p>
+   <h2>Hinweise für die Nutzung von Mercury</h2><p>
+   => Mercury braucht beim Start eine Aussenbindung (DFÜ oder DSL);<br>
+   => Beim start setzt Mercury seinen Domain Name Service (DNS) automatisch auf den Nameserver des Providers;<br>
+   => Benutzer von Gateway-Servern sollten hingegen einen Domain Name Server via TCP/IP gesetzt haben (z.B. von T-Online mit der IP 194.25.2.129);<br>
+   => Die Config-Datei von Mercury lautet MERCURY.INI;<br>
+    => Lokal versandte E-Mails werden u.U. von manchen Providern abgelehnt (vorallem von T-Online und AOL). Der Grund: Diese Provider überprüfen den Mail Header bezüglich einer RELAY Option, um SPAM zu vermeiden;<br>
+	=> lokal zum Testen eine E-Mail an die User postmaster@localhost und admin@localhost senden und den Eingang in den Verzeichnissen /wampp.../mailserver/MAIL/postmaster und (...)/admin kontrollieren;<br>
+   => SPAM und andere Schweinereien sind mit Mercury total verboten!;
+   </td>
+  </tr>
+  </table>
+<hr>
+
+<form method="POST" action="mercury.php">
+<table width=600 cellpadding=0 cellspacing=0 border=0>
+<tr>
+  <td colspan="2" width="596">
+<h1>Ein Test-Formular für Mercury</h1><p>
+<br><p align=center>=> 
+  <a href=mercury.txt>mercury.php (Quellcode)</a><br> <br>
+
+
+  </td>
+</tr>
+<tr>
+  <td align=center width="243">Deine Email-Adresse</td><td align=left width="351">
+
+     <input type="text" name="knownsender" size="40" value="postmaster@localhost">
+
+    </td>
+</tr>
+<tr>
+  <td align=center width="243">&nbsp; </td><td align=center width="351">&nbsp;</td>
+</tr>
+<tr>
+  <td align=center width="243">Die Adresse des Adressats:</td>
+  <td align=left width="351"><input type="text" name="recipients" size="40" value="admin@localhost">
+</td>
+</tr>
+<tr>
+  <td align=center width="243">&nbsp;</td><td align=center width="351">&nbsp;</td>
+</tr>
+<tr>
+  <td align=center width="243">CC:</td>
+  <td align=left width="351"><input type="text" name="ccaddress" size="40">
+</td>
+</tr>
+  <tr>
+    <td align=center width="243">&nbsp;&nbsp;</td><td align=center width="351">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align=center width="243">Betreff:</td>
+    <td align=left width="351"><input type="text" name="subject" size="40">
+</td>
+
+  </tr>
+  <tr>
+    <td align=center width="243">&nbsp;</td><td align=center width="351">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align=center width="243">Nachricht:</td><td align=left width="351">
+
+               <textarea rows="6" name="message" cols="34"></textarea>
+
+     </td>
+  </tr>
+  <tr>
+    <td align=center width="243">&nbsp;</td><td align=center width="351">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align=center width="243">&nbsp;</td><td align=left width="351"><input type=submit value="Abschicken"> * <input type=reset value="Zur&uuml;cksetzen"></form></td>
+  </tr>
+  </table>
+</body>
+</html>

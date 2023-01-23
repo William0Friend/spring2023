@@ -1,0 +1,139 @@
+a:13:{s:8:"filelist";a:26:{s:11:"package.dtd";a:3:{s:4:"role";s:4:"data";s:6:"md5sum";s:32:"2f4920be6b7188c2a8fbca1bab2770d7";s:12:"installed_as";s:33:"c:\php\pear\data\PEAR\package.dtd";}s:13:"template.spec";a:3:{s:4:"role";s:4:"data";s:6:"md5sum";s:32:"82f087ac3b90dd87ea4bf591a1155cc5";s:12:"installed_as";s:35:"c:\php\pear\data\PEAR\template.spec";}s:8:"PEAR.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"62331b6e9fcd5cdec65d49a95edbbde0";s:12:"installed_as";s:20:"c:\php\pear\PEAR.php";}s:10:"System.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"dc803de26abdc24f28981440ce70adf6";s:12:"installed_as";s:22:"c:\php\pear\System.php";}s:19:"PEAR/Autoloader.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"4968070d12657a5c3c9a16f2a107d065";s:12:"installed_as";s:31:"c:\php\pear\PEAR\Autoloader.php";}s:16:"PEAR/Command.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"356939fdf1c54ca266eab2c7ba457400";s:12:"installed_as";s:28:"c:\php\pear\PEAR\Command.php";}s:21:"PEAR/Command/Auth.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"52cd52c00ca34ca6add77b38c511338f";s:12:"installed_as";s:33:"c:\php\pear\PEAR\Command\Auth.php";}s:22:"PEAR/Command/Build.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"c508bd2cb2ef767be3ea0ebbdcb0a225";s:12:"installed_as";s:34:"c:\php\pear\PEAR\Command\Build.php";}s:23:"PEAR/Command/Common.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"cb8db95246f8bb46d712e4abe2e7beb2";s:12:"installed_as";s:35:"c:\php\pear\PEAR\Command\Common.php";}s:23:"PEAR/Command/Config.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"6c5eaf7f1d20807c942627bc3429db59";s:12:"installed_as";s:35:"c:\php\pear\PEAR\Command\Config.php";}s:24:"PEAR/Command/Install.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"bccdbe9d65163f0da6de1c04656e574f";s:12:"installed_as";s:36:"c:\php\pear\PEAR\Command\Install.php";}s:24:"PEAR/Command/Package.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"152337c85ec7653ec5848ac7252a8b4c";s:12:"installed_as";s:36:"c:\php\pear\PEAR\Command\Package.php";}s:25:"PEAR/Command/Registry.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"249ec3a050da1b0c77d589d08a64c066";s:12:"installed_as";s:37:"c:\php\pear\PEAR\Command\Registry.php";}s:23:"PEAR/Command/Remote.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"296572a04ace0fc0c59fd54859fd0175";s:12:"installed_as";s:35:"c:\php\pear\PEAR\Command\Remote.php";}s:15:"PEAR/Common.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"db73aff9b821cfb8aa69d2019589a5bc";s:12:"installed_as";s:27:"c:\php\pear\PEAR\Common.php";}s:15:"PEAR/Config.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"e7b458aed5a9d0a412372cd0d042252c";s:12:"installed_as";s:27:"c:\php\pear\PEAR\Config.php";}s:19:"PEAR/Dependency.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"eafea58cb220a0d41fcbc1567a14a819";s:12:"installed_as";s:31:"c:\php\pear\PEAR\Dependency.php";}s:21:"PEAR/Frontend/CLI.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"02ae08c0cea53daa8c21ee3aa2ae3934";s:12:"installed_as";s:33:"c:\php\pear\PEAR\Frontend\CLI.php";}s:16:"PEAR/Builder.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"4e2f8310b406326a7701df74ac95cb08";s:12:"installed_as";s:28:"c:\php\pear\PEAR\Builder.php";}s:18:"PEAR/Installer.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"e85d7fc3852c351a92c6697e39acc40d";s:12:"installed_as";s:30:"c:\php\pear\PEAR\Installer.php";}s:17:"PEAR/Packager.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"7977f06ac49bcf0f7c0042a31aed4682";s:12:"installed_as";s:29:"c:\php\pear\PEAR\Packager.php";}s:17:"PEAR/Registry.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"05d7738bf4233ba6f0eda8bbf8694da4";s:12:"installed_as";s:29:"c:\php\pear\PEAR\Registry.php";}s:15:"PEAR/Remote.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"75b4c1254066d826dff7d7a952e0b10e";s:12:"installed_as";s:27:"c:\php\pear\PEAR\Remote.php";}s:12:"OS/Guess.php";a:3:{s:4:"role";s:3:"php";s:6:"md5sum";s:32:"e333711c20a1f3591bb071fa859b444f";s:12:"installed_as";s:24:"c:\php\pear\OS\Guess.php";}s:15:"scripts/pear.in";a:6:{s:4:"role";s:6:"script";s:14:"baseinstalldir";s:1:"/";s:6:"md5sum";s:32:"1c05d048cf4b47f47091c2a546c151d8";s:10:"install-as";s:4:"pear";s:12:"replacements";a:3:{i:0;a:3:{s:4:"from";s:9:"@php_bin@";s:2:"to";s:7:"php_bin";s:4:"type";s:11:"pear-config";}i:1;a:3:{s:4:"from";s:14:"@pear_version@";s:2:"to";s:7:"version";s:4:"type";s:12:"package-info";}i:2;a:3:{s:4:"from";s:14:"@include_path@";s:2:"to";s:7:"php_dir";s:4:"type";s:11:"pear-config";}}s:12:"installed_as";s:11:"c:\php\pear";}s:16:"scripts/pear.bat";a:7:{s:4:"role";s:6:"script";s:14:"baseinstalldir";s:1:"/";s:6:"md5sum";s:32:"638b7685d66ca9f786b4d2f9765a7bd2";s:8:"platform";s:7:"windows";s:10:"install-as";s:8:"pear.bat";s:12:"replacements";a:2:{i:0;a:3:{s:4:"from";s:11:""@php_bin@"";s:2:"to";s:7:"php_bin";s:4:"type";s:11:"pear-config";}i:1;a:3:{s:4:"from";s:16:""@include_path@"";s:2:"to";s:7:"php_dir";s:4:"type";s:11:"pear-config";}}s:12:"installed_as";s:15:"c:\php\pear.bat";}}s:7:"package";s:4:"PEAR";s:7:"summary";s:16:"PEAR Base System";s:11:"description";s:169:"The PEAR package contains:
+ * the PEAR base class
+ * the PEAR_Error error handling mechanism
+ * the PEAR installer, for creating, distributing
+   and installing packages";s:11:"maintainers";a:3:{i:0;a:4:{s:6:"handle";s:3:"ssb";s:4:"name";s:18:"Stig Sæther Bakken";s:5:"email";s:12:"stig@php.net";s:4:"role";s:4:"lead";}i:1;a:4:{s:6:"handle";s:3:"cox";s:4:"name";s:13:"Tomas V.V.Cox";s:5:"email";s:15:"cox@idecnet.com";s:4:"role";s:9:"developer";}i:2;a:4:{s:6:"handle";s:2:"mj";s:4:"name";s:13:"Martin Jansen";s:5:"email";s:10:"mj@php.net";s:4:"role";s:6:"helper";}}s:7:"version";s:5:"1.0.1";s:12:"release_date";s:10:"2003-01-10";s:15:"release_license";s:11:"PHP License";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:386:"* PEAR_Error class has call backtrace available by
+  calling getBacktrace().  Available if used with
+  PHP 4.3 or newer.
+
+* PEAR_Config class uses getenv() rather than $_ENV
+  to read environment variables.
+
+* System::which() Windows fix, now looks for
+  exe/bat/cmd/com suffixes rather than just exe
+
+* Added "pear cvsdiff" command
+
+* Windows output buffering bugfix for "pear" command";s:12:"release_deps";a:3:{i:1;a:3:{s:4:"type";s:3:"php";s:3:"rel";s:2:"ge";s:7:"version";s:3:"4.1";}i:2;a:4:{s:4:"type";s:3:"pkg";s:3:"rel";s:2:"ge";s:7:"version";s:3:"0.4";s:4:"name";s:11:"Archive_Tar";}i:3;a:4:{s:4:"type";s:3:"pkg";s:3:"rel";s:2:"ge";s:7:"version";s:4:"0.11";s:4:"name";s:14:"Console_Getopt";}}s:9:"changelog";a:7:{i:0;a:4:{s:7:"version";s:3:"1.0";s:12:"release_date";s:10:"2002-12-27";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:66:"* set default cache_ttl to 1 hour
+* added "clear-cache" command
+
+
+";}i:1;a:4:{s:7:"version";s:5:"1.0b3";s:12:"release_date";s:10:"2002-12-13";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:233:"* fixed "info" shortcut (conflicted with "install")
+* added "php_bin" config parameter
+* all "non-personal" config parameters now use
+  environment variables for defaults (very useful
+  to override the default php_dir on Windows!)
+
+
+";}i:2;a:4:{s:7:"version";s:5:"1.0b2";s:12:"release_date";s:10:"2002-11-26";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:203:"Changes, Installer:
+* --force option no longer ignores errors, use
+  --ignore-errors instead
+* installer transactions: failed installs abort
+  cleanly, without leaving half-installed packages
+  around
+
+
+";}i:3;a:4:{s:7:"version";s:5:"1.0b1";s:12:"release_date";s:10:"2002-10-12";s:13:"release_state";s:6:"stable";s:13:"release_notes";s:1171:"New Features, Installer:
+* new command: "pear makerpm"
+* new command: "pear search"
+* new command: "pear upgrade-all"
+* new command: "pear config-help"
+* new command: "pear sign"
+* Windows support for "pear build" (requires
+  msdev)
+* new dependency type: "zend"
+* XML-RPC results may now be cached (see
+  cache_dir and cache_ttl config)
+* HTTP proxy authorization support
+* install/upgrade install-root support
+
+Bugfixes, Installer:
+* fix for XML-RPC bug that made some remote
+  commands fail
+* fix problems under Windows with
+  DIRECTORY_SEPARATOR
+* lots of other minor fixes
+* --force option did not work for "pear install
+  Package"
+* http downloader used "4.2.1" rather than
+  "PHP/4.2.1" as user agent
+* bending over a little more to figure out how
+  PHP is installed
+* "platform" file attribute was not included
+  during "pear package"
+
+New Features, PEAR Library:
+* added PEAR::loadExtension($ext)
+* added PEAR::delExpect()
+* System::mkTemp() now cleans up at shutdown
+* defined PEAR_ZE2 constant (boolean)
+* added PEAR::throwError() with a simpler API
+  than raiseError()
+
+Bugfixes, PEAR Library:
+* ZE2 compatibility fixes
+* use getenv() as fallback for $_ENV
+
+
+";}i:4;a:4:{s:7:"version";s:4:"0.90";s:12:"release_date";s:10:"2002-05-28";s:13:"release_state";s:4:"beta";s:13:"release_notes";s:482:"* fix: "help" command was broken
+* new command: "info"
+* new command: "config-help"
+* un-indent multi-line data from xml description files
+* new command: "build"
+* fix: config-set did not work with "set" parameters
+* disable magic_quotes_runtime
+* "install" now builds and installs C extensions
+* added PEAR::delExpect()
+* System class no longer inherits PEAR
+* grouped PEAR_Config parameters
+* add --nobuild option to install/upgrade commands
+* new and more generic Frontend API
+
+
+";}i:5;a:4:{s:7:"version";s:4:"0.10";s:12:"release_date";s:10:"2002-05-26";s:13:"release_state";s:4:"beta";s:13:"release_notes";s:968:"Lots of stuff this time.  0.9 was not actually self-hosting, even
+though it claimed to be.  This version finally is self-hosting
+(really!), meaning you can upgrade the installer with the command
+"pear upgrade PEAR".
+
+* new config paramers: http_proxy and umask
+* HTTP proxy support when downloading packages
+* generalized command handling code
+* and fixed the bug that would not let commands have the
+  same options as "pear" itself
+* added long options to every command
+* added command shortcuts ("pear help shortcuts")
+* added stub for Gtk installer
+* some phpdoc fixes
+* added class dependency detector (using ext/tokenizer)
+* dependency handling fixes
+* added OS_Guess class for detecting OS
+* install files with the "platform" attribute set
+  only on matching operating systems
+* PEAR_Remote now falls back to the XML_RPC package
+  if xmlrpc-epi is not available
+* renamed command: package-list -> list
+* new command: package-dependencies
+* lots of minor fixes
+
+
+";}i:6;a:4:{s:7:"version";s:3:"0.9";s:12:"release_date";s:10:"2002-04-07";s:13:"release_state";s:4:"beta";s:13:"release_notes";s:296:"First package release.  Commands implemented:
+   remote-package-info
+   list-upgrades
+   list-remote-packages
+   download
+   config-show
+   config-get
+   config-set
+   list-installed
+   shell-test
+   install
+   uninstall
+   upgrade
+   package
+   package-list
+   package-info
+   login
+   logout
+
+
+";}}s:13:"_lastmodified";i:1048121473;}

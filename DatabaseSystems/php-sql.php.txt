@@ -1,0 +1,36 @@
+function createXMLfile($customerTableArray)
+
+{
+
+  $filepath = 'CustomerData_'.date('m-d-Y_hia').'.xml'; //'customerData.xml'
+
+  $dom = new DOMDocument('1.0', 'utf-8');
+
+  $root = $dom->createElement('customerData');
+
+ 
+
+  for($i=0; $i<count($customerTableArray); $i++)
+
+  {
+
+    $cus_id = $customerTableArray[$i]['cus_id'];
+
+    $cus_fname = $customerTableArray[$i]['cus_fname'];
+
+ 
+
+    $customer = $dom->createElement('customer');
+
+    $customer->setAttribute('cus_id', $cus_id);
+
+ 
+
+    $cus_fname = $dom->createElement('cus_fname', $cus_fname);
+
+    $customer->appendChild($cus_fname);
+
+    $root->appendChild($customer);
+
+  }
+

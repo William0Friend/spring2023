@@ -1,0 +1,23 @@
+<html>
+  <head>
+<meta name="author" content="Kay Vogelgesang">
+<link href="xampp.css" rel="stylesheet" type="text/css">
+  <title>Dynamisches HTML mit Server Side Includes</title>
+  </head>
+  <BODY>
+&nbsp;<p>
+<table width=500 cellpadding=0 cellspacing=0 border=0>
+<tr><td align=center>
+<h1>Mit den korrekten Umgebungsvaribalen klappt auch SSI!</h1><p>
+
+
+  <P>
+
+  <h2>Dynamisches HTML mit Server Side Includes</h2><p>
+  Datum/Uhrzeit auf dem Server-Rechner: <!--#echo var="DATE_LOCAL"--><br>
+  Name dieser HTML-Datei: <!--#echo var="DOCUMENT_NAME"--><br>
+  Installierte Server-Software: <!--#echo var="SERVER_SOFTWARE"--><br>
+  Ihr WWW-Browser: <!--#echo var="HTTP_USER_AGENT"-->
+</tr></td></table>
+  </body>
+  </html>

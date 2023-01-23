@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "WAMPP mit WEBDAV für DREAMWEAVER"
+require valid-user
+AuthUserfile /wampp2/webdav/.htpasswd

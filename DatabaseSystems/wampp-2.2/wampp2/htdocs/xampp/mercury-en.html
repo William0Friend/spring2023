@@ -1,0 +1,92 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!doctype html public "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; Charset=iso-8859-1">
+<title></title>
+<meta name="author" content="Kay Vogelgesang">
+<link href="xampp.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<table width=600 cellpadding=0 cellspacing=0 border=0>
+<tr>
+  <td>
+<h1>Mercury - A Mail Server for win32</h1><p>
+ <h2>After many useful notes from you ... <h2><p>
+  Mercury is freeware and supports the PHP mail() function.<p>
+ Please check the <a href=http://www.pmail.com/overviews/ovw_mercury.htm target="_top">Mercury Homepage</a>.<p>
+   <h2>Notes for using Mercury</h2><p>
+   => Mercury needs an external connection on startup;<br>
+   => On startup, Mercury defines the Domain Name Service (DNS) automatically as the name server of your provider;<br>
+   => For all user of gateway servers: Please set your DNS via TCP/IP (f.e. via InterNic with the IP number 198.41.0.4);<br>
+   => The config file of Mercury is called MERCURY.INI;<br>
+   => to test, please send a message to postmaster@localhost or admin@localhost and check for these messages in the following folders: /wampp.../mailserver/MAIL/postmaster or (...)/admin;<br> 
+   => Spam and other obscenities are totally forbidden with Mercury!;
+   </td>
+  </tr>
+  </table>
+<hr>
+
+<form method="POST" action="mercury-en.php">
+<table width=600 cellpadding=0 cellspacing=0 border=0>
+<tr>
+  <td colspan="2" width="596">
+<h1>A form to test Mercury</h1><p>
+<br><p align=center>=> 
+  <a href=mercury-en.txt>mercury.php (Source)</a><br> <br>
+
+
+  </td>
+</tr>
+<tr>
+  <td align=center width="243">Your email address</td><td align=left width="351">
+
+     <input type="text" name="knownsender" size="40" value="postmaster@localhost">
+
+    </td>
+</tr>
+<tr>
+  <td align=center width="243">&nbsp; </td><td align=center width="351">&nbsp;</td>
+</tr>
+<tr>
+  <td align=center width="243">The recipient</td>
+  <td align=left width="351"><input type="text" name="recipients" size="40" value="admin@localhost">
+</td>
+</tr>
+<tr>
+  <td align=center width="243">&nbsp;</td><td align=center width="351">&nbsp;</td>
+</tr>
+<tr>
+  <td align=center width="243">CC:</td>
+  <td align=left width="351"><input type="text" name="ccaddress" size="40">
+</td>
+</tr>
+  <tr>
+    <td align=center width="243">&nbsp;&nbsp;</td><td align=center width="351">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align=center width="243">Subject:</td>
+    <td align=left width="351"><input type="text" name="subject" size="40">
+</td>
+
+  </tr>
+  <tr>
+    <td align=center width="243">&nbsp;</td><td align=center width="351">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align=center width="243">Message:</td><td align=left width="351">
+
+               <textarea rows="6" name="message" cols="34"></textarea>
+
+     </td>
+  </tr>
+  <tr>
+    <td align=center width="243">&nbsp;</td><td align=center width="351">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align=center width="243">&nbsp;</td><td align=left width="351"><input type=submit value="Submit"> * <input type=reset value="Reset"></form></td>
+  </tr>
+  </table>
+</body>
+</html>
