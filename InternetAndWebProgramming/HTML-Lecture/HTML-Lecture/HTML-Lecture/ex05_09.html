@@ -1,0 +1,158 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- Exercise 5.9 Solution -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Solution 5.9</title>
+   </head>
+
+   <body>
+      <h1>College Visit Feedback Form</h1>
+
+      <p>
+         Please fill out this form to let us know how your 
+         visit was so that we can improve our facilities to 
+         better suit your needs amd the needs of your peers.
+      </p>
+
+      <form method = "post" action = "">
+         
+         <p>
+            <input type = "hidden" name = "recipient" 
+               value = "college@college.edu" />
+            <input type = "hidden" name = "subject" 
+               value = "Visit Feedback" />
+            <input type = "hidden" name = "redirect" 
+               value = "index.html" />
+         </p>
+
+         <!-- insert a textbox to gather information about -->
+         <!-- the user                                     -->
+         <p><label>Full Name:
+            <input name = "fullname" type = "text" 
+               size = "40" />
+         </label></p>
+            
+         <p><label>Address1:
+            <input name = "address1" type = "text" 
+               size = "40" />
+            </label></p>
+
+         <p><label>Address2:
+            <input name = "address2" type = "text" 
+               size = "40" />
+            </label></p>
+
+         <p><label>Zip Code:
+            <input name = "zip" type = "text" size = "10" />
+            </label></p>
+
+         <p><label>E-mail:
+            <input name = "email" type = "text" size = "25" />
+            </label></p>
+
+         <p><strong><em>Check off all of the characteristics that
+            you enjoyed about the college:</em></strong></p>
+          
+         <!-- insert checkboxes for the user to check  -->
+         <!-- off what he or she likes                 -->
+         <p>
+            <label>Campus
+               <input name = "likes" type = "checkbox" 
+                  value = "campus" />
+            </label>
+ 
+            <label>Students
+               <input name = "likes" type = "checkbox" 
+                  value = "students" />
+            </label>
+
+            <label>Location
+               <input name = "likes" type = "checkbox" 
+                  value = "location" />
+            </label>
+         </p>
+
+         <p>
+            <label>Atmosphere
+               <input name = "likes" type = "checkbox" 
+                  value = "atmosphere" />
+            </label>
+
+            <label>Dorm Rooms
+               <input name = "likes" type = "checkbox" 
+                  value = "dormrooms" />
+            </label>
+
+            <label>Sports
+               <input name = "likes" type = "checkbox" 
+                  value = "sports" />
+            </label>
+         </p>
+         
+         <p><strong><em>How did you become interested in 
+            our college?</em></strong></p>
+
+         <!-- radio buttons, user can only select one -->
+         <p>
+            <label>Friends
+               <input name = "interest" type = "radio" 
+                  value = "friends" checked = "checked" />
+            </label>
+
+            <label>TV Advertisement
+               <input name = "interest" type = "radio" 
+                  value = "tv" />
+            </label>
+
+            <label>Internet
+               <input name = "interest" type = "radio" 
+                  value = "internet" />
+            </label>
+
+            <label>Other
+               <input name = "interest" type = "radio" 
+                  value = "other" />
+            </label>
+         </p>
+
+         <p><strong><em>Please give us any additional feedback 
+            that you may have.</em></strong></p>
+            
+         <!-- user can enter in multiple lines of  -->
+         <!-- information in a textarea            -->
+         <p>
+            <label>Comments:
+               <textarea name = "comments" rows = "4" 
+                  cols = "40"></textarea>
+            </label>
+         </p>
+
+         <p>
+            <input type = "submit" value = "Submit" />
+            <input type = "reset" value = "Clear" />
+         </p>
+      </form>
+
+   </body>
+</html>
+
+<!--
+**************************************************************************
+* (C) Copyright 1992-2004 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+**************************************************************************
+-->

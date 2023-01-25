@@ -1,0 +1,43 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- Fig. 5.1: table1.html   -->
+<!-- Creating a basic table  -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<body>
+
+<p>
+Click on one of the planets to watch it closer:
+</p>
+
+<img src="planets.gif" 
+width="145" height="126" 
+usemap="#planetmap">
+
+<map id="planetmap" name="planetmap">
+
+<area shape="rect" 
+coords="0,0,82,126" 
+alt="Sun"
+href="http://en.wikipedia.org/wiki/Sun">
+
+<area shape="circle" 
+coords="90,58,3" 
+alt="Mercury"
+href="http://en.wikipedia.org/wiki/Mercury_(planet)">
+
+<area shape="circle" 
+coords="124,58,8" 
+alt="Venus"
+href="http://en.wikipedia.org/wiki/Venus">
+
+</map>
+
+<p><b>Note:</b> The "usemap" attribute in the img element refers to the "id" or "name" (browser dependant) attribute in 
+the map element, therefore we have added both the "id" and "name" attributes to the map element.</p>
+
+</body>
+</html>
+
