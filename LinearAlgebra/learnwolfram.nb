@@ -43,8 +43,7 @@ moo = cow +
   5    (* Beware, moo now holds an expression, not a number! *)
 
 (* Defining a function *)
-Double[x_] := 
- x * 2    (* Note := to prevent immediate evaluation of the RHS
+Double[x_] :=x * 2    (* Note := to prevent immediate evaluation of the RHS
                           And _ after x to indicate no pattern \
 matching constraints *)
 Double[10]             (* 20 *)
@@ -68,12 +67,12 @@ PrintTo[x_] :=
 PrintTo[5]                                     (* 0 1 2 3 4 *)
 
 (* While Loop *)
-x = 0; While[
- x < 2, (Print@x; x++)]     (* While loop with test and body *)
+x = 0; 
+While[x < 2, (Print@x; x++)];     (* While loop with test and body *)
 
 (* If and conditionals *)
-x = 8; If[x == 8, Print@"Yes", 
- Print@"No"]   (* Condition, true case, else case *)
+x = 8; If[x == 8, Print@
+"Yes", Print@"No"]   (* Condition, true case, else case *)
 Switch[x, 2, Print@"Two", 8, 
  Print@"Yes"]  (* Value match style switch *)
 Which[x == 2, Print@"No", x == 8, Print@"Yes"] (* Elif style switch *)
